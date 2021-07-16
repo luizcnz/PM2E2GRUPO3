@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PML2Exa2Grupo3.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+                    Priority="0"
+                    Order="Primary"
+                    x:Name="btnNewUbication"
+                    Text="Nueva Ubicacion"
+                    Clicked="btnNewUbication_Clicked"
+                    
+                />
+        <ToolbarItem
+                    Priority="0"
+                    Order="Primary"
+                    x:Name="btnListUbication"
+                    Text="Ubicacion Salvada"
+                    Clicked="btnListUbication_Clicked"
+                    
+                />
+
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <StackLayout>
+
+
+            <Image x:Name="foto" 
+                   Source="iconofoto.png" 
+                   WidthRequest="200" 
+                   Margin="0,20,0,0"/>
+
+            <Button x:Name="btnTakePhoto"
+                    HeightRequest="50"
+                    Margin="50,0"
+                    CornerRadius="15"
+                    BackgroundColor="#D0C8CA"
+                    Text="Tomar Foto" 
+                    Clicked="btnTakePhoto_Clicked"/>
+
+            <!--Ingresa Latitud-->
+            <Label  Margin="20,10,0,0"
+                    FontSize="20"
+                    Text="Latitud Actual: "/>
+            <Entry x:Name="txtLatitud"
+                   Margin="20,0"
+                   IsEnabled="False"
+                   />
+
+            <!--Ingresar Longitud-->
+            <Label  Margin="20,0"
+                    FontSize="20"
+                    Text="Longitud Actual: "/>
+            <Entry  x:Name="txtLongitud"
+                    Margin="20,0"
+                    IsEnabled="False"
+                    />
+
+            <!--Ingresar Ubicacion Corta-->
+            <Label  Margin="20,0"
+                    FontSize="20"
+                    Text="Descripcion Corta: "/>
+            <Entry x:Name="txtDescripcion"
+                   Margin="20,0"
+                    Placeholder="Games Plus"/>
+
+            <!--Botones del Final-->
+            <StackLayout Margin="20,10,20,10"
+                            Orientation="Horizontal">
+
+                <Button x:Name="btnSavedUbication"
+                    HeightRequest="50"
+                    CornerRadius="20"
+                    BackgroundColor="#6EF748"
+                    Clicked="btnSavedUbication_Clicked"
+                    Text="Salvar Ubicacion" />
+
+                <Button  x:Name="btnListUbication1"
+                    HeightRequest="50"
+                    CornerRadius="20"
+                    BackgroundColor="#488FF7"
+                    Text="Ubicacion Salvada"
+                    Clicked="btnListUbication_Clicked"/>
+            </StackLayout>
+            <Button x:Name="btnEnterData"
+                    Margin="20,10"
+                    HeightRequest="50"
+                    CornerRadius="10"
+                    BackgroundColor="#F748EF"
+                    Text="Ingresar Datos de Prueba"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

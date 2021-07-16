@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PML2Exa2Grupo3.ListaFourSquare">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ListFourSquare"
+                      RowHeight="120">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <Grid >
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding name}" 
+                                   FontAttributes="Bold"/>
+
+                                    <Label Text="{Binding location.country}" 
+                                   FontAttributes="Bold"/>
+
+                                    <Label Text="{Binding location.distance}" />
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Consumir FourSquare" 
+                    x:Name="btnConsume" 
+                    Clicked="btnConsume_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
