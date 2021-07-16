@@ -66,10 +66,8 @@ namespace PML2Exa2Grupo3
 
         private async void btnListUbication_Clicked(object sender, EventArgs e)
         {
-            CargarSitios cargar = new CargarSitios();
-            var verUbicacion = new ListaUbicacion(await cargar.GetSites(URL.getUrl("/sites")));
-     
-            await Navigation.PushAsync(verUbicacion);
+            
+            await Navigation.PushAsync(new ListaUbicacion());
         }
 
         private async void btnSavedUbication_Clicked(object sender, EventArgs e)

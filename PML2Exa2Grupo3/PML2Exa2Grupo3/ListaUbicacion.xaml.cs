@@ -22,9 +22,8 @@ namespace PML2Exa2Grupo3
         public List<Sitios> Sitios { get; set; }
         public ICommand DeleteCommand { protected set; get; }
         public ICommand SeeCommand { protected set; get; }
-        public ListaUbicacion(List<Sitios> sitios)
+        public ListaUbicacion()
         {
-            this.Sitios = sitios;
             DeleteCommand = new Command<Sitios>(async (key) =>
              {
                  Sitios SelectPictures = key as Sitios;
@@ -37,15 +36,17 @@ namespace PML2Exa2Grupo3
 
                 await DisplayAlert("info", SelectPictures.Id.ToString(), "OK");
             });
+            CargarSitios cargar = new CargarSitios();
 
-            InitializeComponent();
+            ListUbications.ItemsSource = cargar.GetSites(URL.getUrl("/sites")).Result;
+        
+        InitializeComponent();
         }
         protected async override void OnAppearing()
         {
 
             base.OnAppearing();
-            ListUbications.ItemsSource = Sitios;
-
+          
         }
     }
 
