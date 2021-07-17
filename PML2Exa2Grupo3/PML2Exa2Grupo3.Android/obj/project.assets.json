@@ -2434,11 +2434,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
       "projectName": "PML2Exa2Grupo3.Android",
-      "projectPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
+      "projectPath": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
       "packagesPath": "C:\\Users\\Sarah Osorto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\obj\\",
+      "outputPath": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2459,8 +2459,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {
-              "projectPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj"
+            "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {
+              "projectPath": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj"
             }
           }
         }

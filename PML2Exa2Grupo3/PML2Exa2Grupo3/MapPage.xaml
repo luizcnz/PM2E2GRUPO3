@@ -7,15 +7,15 @@
         <StackLayout>
 
 
-            <StackLayout IsVisible="false">
+            <StackLayout IsVisible="true">
                 <StackLayout Orientation="Vertical">
-                    <Label Text="{Binding name}" 
+                    <Label Text="{Binding nombre}" 
                                    FontAttributes="Bold"/>
 
-                    <Label Text="{Binding location.lat}" 
+                    <Label Text="{Binding longitud}" 
                            x:Name="Mapa_Lat"/>
 
-                    <Label Text="{Binding location.lng}" 
+                    <Label Text="{Binding lactitud}" 
                            x:Name="Mapa_Lng"/>
                 </StackLayout>
             </StackLayout>

@@ -16,7 +16,7 @@ namespace PML2Exa2Grupo3
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListaFourSquare : ContentPage
     {
-        private Metodos.Location seleccionarItem;
+        private Metodos seleccionarItem;
         private String ItemNombre;
         private double ItemLactitud;
         private double ItemLongitud;
@@ -34,17 +34,22 @@ namespace PML2Exa2Grupo3
         }
 
         private async void btnHowToGet_Clicked(object sender, EventArgs e)
-        {
+            {
 
-            //var mapa = new Metodos
-            //{
-            //    Name = seleccionarItem.txtName,
-            //    Latitud = seleccionarItem.txtLatitude,
-            //    Longitud = seleccionarItem.txtLongitud
-            //};
-            //await DisplayAlert("Datos a Enviar> " + seleccionarItem.txtName +  " Coordenadas >> " + seleccionarItem.txtLatitude + " " + seleccionarItem.txtLongitud, "OK");
-            await DisplayAlert("Datos a Enviar> " + ItemNombre ," Coordenadas >> " + ItemLactitud + " " + ItemLongitud, "OK");
+                var Segunda = new MapPage();
+                Segunda.BindingContext = new
+                {
+                    nombre = ItemNombre,
+                    longitud = ItemLongitud,
+                    lactitud = ItemLactitud
+                };
+                await Navigation.PushAsync(Segunda);
 
+                //await DisplayAlert("Datos a Enviar> " + seleccionarItem.txtName +  " Coordenadas >> " + seleccionarItem.txtLatitude + " " + seleccionarItem.txtLongitud, "OK");
+                await DisplayAlert("Datos a Enviar> " + ItemNombre, " Coordenadas >> " + ItemLactitud + " " + ItemLongitud, "OK");
+
+
+           
 
         }
 

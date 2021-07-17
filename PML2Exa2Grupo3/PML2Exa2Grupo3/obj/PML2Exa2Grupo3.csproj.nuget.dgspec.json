@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {}
+    "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {
+    "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj",
+        "projectUniqueName": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj",
         "projectName": "PML2Exa2Grupo3",
-        "projectPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj",
+        "projectPath": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj",
         "packagesPath": "C:\\Users\\Sarah Osorto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\obj\\",
+        "outputPath": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
