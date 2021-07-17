@@ -18,7 +18,6 @@ C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3\bin\Debug\netstandard2.0\PML2Exa2Grupo3.dll
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3\bin\Debug\netstandard2.0\ref\PML2Exa2Grupo3.dll
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3\bin\Debug\netstandard2.0\PML2Exa2Grupo3.pdb
-C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3\obj\Debug\netstandard2.0\PML2Exa2Grupo3.csproj.AssemblyReference.cache
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3\obj\Debug\netstandard2.0\ListaFourSquare.xaml.g.cs
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3\obj\Debug\netstandard2.0\ListaUbicacion.xaml.g.cs

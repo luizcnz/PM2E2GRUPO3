@@ -7,18 +7,21 @@
         <StackLayout>
             
             <maps:Map HorizontalOptions="FillAndExpand"
-             VerticalOptions="FillAndExpand" x:Name="mapas" IsShowingUser="True"/>
+             VerticalOptions="FillAndExpand" 
+                      x:Name="mpMapa" 
+                      IsShowingUser="True"/>
 
-            <StackLayout IsVisible="true">
+            <StackLayout IsVisible="false">
                 <StackLayout Orientation="Vertical">
-                    <Label Text="{Binding nombre}" 
+                    <Label x:Name="txtMapaNombre"
+                        Text="{Binding nombre}" 
                                    FontAttributes="Bold"/>
 
                     <Label Text="{Binding longitud}" 
-                           x:Name="Mapa_Lat"/>
+                           x:Name="txtMapaLongitud"/>
 
                     <Label Text="{Binding lactitud}" 
-                           x:Name="Mapa_Lng"/>
+                           x:Name="txtMapaLactitud"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

@@ -838,9 +838,9 @@ C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\android\assets\Xamarin.GooglePlayServices.Maps.pdb
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\android\assets\Xamarin.GooglePlayServices.Tasks.dll
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\android\assets\Xamarin.GooglePlayServices.Tasks.pdb
-C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\androidx\jl\28a60b52-5666-4b9e-8c76-a40d9c80b187.jar
+C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\androidx\jl\2f8ba080-d2a0-4b9f-9b41-2fcbe8ea2c75.jar
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\stamp\_AndroidXJetifyJavaLibraryRules.stamp
-C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\androidx\proguard\b70fcc95-ad26-4b13-b8b8-1844def28d0d.cfg
+C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\androidx\proguard\560fab96-6f82-4d8e-82ab-6833b9d66a42.cfg
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\stamp\_AndroidXJetifyProguardRules.stamp
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\androidx\_AndroidXJetifyProguardRules.jetify
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\stamp\_AndroidXCecilfy.stamp
