@@ -1274,6 +1274,6 @@ C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\android\assets\Plugin.Connectivity.dll.mdb
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\android\assets\System.Threading.dll
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\android\assets\System.Threading.Tasks.dll
-C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\androidx\jl\296e0163-3e5b-4502-ad24-9e7a3d8d86d6.jar
-C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\androidx\proguard\f2b6625a-ea81-412e-a6f8-268c881c78df.cfg
 C:\Users\Sarah Osorto\source\repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\android\src\crc64cea48322b3427ae9\ConnectivityChangeBroadcastReceiver.java
+C:\Users\Sarah Osorto\Source\Repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\androidx\jl\3af7b2a7-5548-4887-80e5-65ef68fb9c78.jar
+C:\Users\Sarah Osorto\Source\Repos\PM2Examen2GRUPO3\PML2Exa2Grupo3\PML2Exa2Grupo3.Android\obj\Debug\110\androidx\proguard\4c2d337d-a9ad-4857-a8f6-ecd77e6b182e.cfg

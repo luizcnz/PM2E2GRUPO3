@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ykmU/pOj2HafdpIYATwlqhw1iYZMtqIQ0N2zNMBCcSCIGBcHvgbSwYMhPqY28A5GYaXy0e14sfNRQGh2ZKx8fw==",
+  "dgSpecHash": "hsPywXP58Z3ztMPXbrVRAo4I5hPvfHYHvHuqLML4c5jlCYOwhuv2jF+gOIokZJifnRVrZDZ+avr0oXpzR3FQ5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
+  "projectFilePath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\plugin.currentactivity\\2.1.0.2\\plugin.currentactivity.2.1.0.2.nupkg.sha512",

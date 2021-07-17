@@ -18,8 +18,10 @@ namespace PML2Exa2Grupo3
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     
+
     public partial class ListaUbicacion : ContentPage
     {
+        private Sitios seleccinarId;
 
         public ListaUbicacion()
         {
@@ -28,23 +30,38 @@ namespace PML2Exa2Grupo3
         
 
        
-        }
-
-        
-<<<<<<< HEAD
-        InitializeComponent();
-        }
-
-        protected override void OnAppearing()
-=======
+        }        
 
         protected async override void OnAppearing()
->>>>>>> 50b29916deff5585fb26d8b5fd5dc17d466e4d70
         {
             base.OnAppearing();
        
         }
 
-    }
+        private async void btnSeeUbications_Clicked(object sender, EventArgs e)
+        {
+            var sitio = new
+            {
+                Latitud = seleccinarId.Latitud,
+                Longitud = seleccinarId.Longitud
+            };
 
-}
+            //await DisplayAlert("Datos a Enviar> " + seleccinarId.Id + " " + seleccinarId.DescripcionCorta, " Ubicacion Larga> " + seleccinarId.DescripcionLarga + " Coordenadas >> " + seleccinarId.Latitud + " " + seleccinarId.Longitud, "OK");
+
+            var Page = new ListaFourSquare();
+            Page.BindingContext = sitio;
+            await Navigation.PushAsync(Page);
+            seleccinarId = null;
+
+        }
+
+        private void ListaUbicacion_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+            seleccinarId = e.SelectedItem as Sitios;
+
+        }
+
+        }
+
+    }

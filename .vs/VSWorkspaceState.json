@@ -5,8 +5,10 @@
     "\\PML2Exa2Grupo3\\PML2Exa2Grupo3",
     "\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android",
     "\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\Properties",
-    "\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\Config"
+    "\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\Config",
+    "\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\Models",
+    "\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\viewmodel"
   ],
-  "SelectedNode": "\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\MainPage.xaml.cs",
+  "SelectedNode": "\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\viewmodel\\ListSitiosVM.cs",
   "PreviewInSolutionExplorer": false
 }
