@@ -108,7 +108,7 @@ namespace PML2Exa2Grupo3
                     var content = new StringContent(JsonConvert.SerializeObject(photoToSave), Encoding.UTF8, "application/json");
                     await DisplayAlert("Espera", " Su informacion se esta guardando por favor espere", "Aceptar");
 
-                    HttpResponseMessage response = await client.PostAsync(URL.getUrl("/sites"), content);
+                    HttpResponseMessage response = await client.PostAsync(URL.getUrl("/add"), content);
                     if (response.IsSuccessStatusCode)
                     {
                         //var valor = await response.Content.ReadAsStringAsync();

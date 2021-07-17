@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj": {}
+    "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj": {
+    "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
         "projectName": "PML2Exa2Grupo3.Android",
-        "projectPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
-        "packagesPath": "C:\\Users\\Sarah Osorto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\obj\\",
+        "projectPath": "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
+        "packagesPath": "C:\\Users\\Dani Hernandez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sarah Osorto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dani Hernandez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {
-                "projectPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj"
+              "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {
+                "projectPath": "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj"
               }
             }
           }
@@ -70,20 +70,20 @@
         }
       }
     },
-    "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {
+    "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj",
+        "projectUniqueName": "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj",
         "projectName": "PML2Exa2Grupo3",
-        "projectPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj",
-        "packagesPath": "C:\\Users\\Sarah Osorto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sarah Osorto\\Source\\Repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\obj\\",
+        "projectPath": "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj",
+        "packagesPath": "C:\\Users\\Dani Hernandez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dani Hernandez\\source\\repos\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sarah Osorto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dani Hernandez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -155,7 +155,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

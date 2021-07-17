@@ -34,3 +34,4 @@ C:\Users\Dani Hernandez\source\repos\PML2Exa2Grupo3\PML2Exa2Grupo3\PML2Exa2Grupo
 C:\Users\Dani Hernandez\source\repos\PML2Exa2Grupo3\PML2Exa2Grupo3\PML2Exa2Grupo3\obj\Debug\netstandard2.0\ref\PML2Exa2Grupo3.dll
 C:\Users\Dani Hernandez\source\repos\PML2Exa2Grupo3\PML2Exa2Grupo3\PML2Exa2Grupo3\obj\Debug\netstandard2.0\PML2Exa2Grupo3.pdb
 >>>>>>> 50b29916deff5585fb26d8b5fd5dc17d466e4d70
+C:\Users\Dani Hernandez\source\repos\PML2Exa2Grupo3\PML2Exa2Grupo3\PML2Exa2Grupo3\obj\Debug\netstandard2.0\MapPage.xaml.g.cs

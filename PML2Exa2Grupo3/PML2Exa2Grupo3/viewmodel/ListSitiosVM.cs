@@ -53,29 +53,24 @@ namespace PML2Exa2Grupo3.viewmodel
             }
 
 
-            //DeleteCommand = new Command<Sitios>(async (key) =>
-            //{
-              //  Sitios SelectPictures = key as Sitios;
-                //Uri uri = new Uri(string.Format(URL.getUrl("/delete/"+SelectPictures.Id)));
-                //HttpResponseMessage response = await cliente.DeleteAsync(uri);
-                //var result = await cliente.DeleteAsync(uri);
+            DeleteCommand = new Command<Sitios>(async (key) =>
+            {
+                Sitios SelectPictures = key as Sitios;
+                Uri uri = new Uri(string.Format(URL.getUrl("/delete/"+SelectPictures.Id)));
+                HttpResponseMessage response = await cliente.DeleteAsync(uri);
+                var result = await cliente.DeleteAsync(uri);
                
-                //if (result.IsSuccessStatusCode)
-                //{
+                if (result.IsSuccessStatusCode)
+                {
 
-                  //  SitiosList.Remove(SelectPictures);
-                    //Debug.WriteLine("successfully deleted.");
-                //}
+                    SitiosList.Remove(SelectPictures);
+                    Debug.WriteLine("successfully deleted.");
+                }
 
 
-            //});
+            });
 
-            //SeeCommand = new Command<Sitios>(async (key) =>
-            //{
-               // Sitios SelectPictures = key as Sitios;
-               // var verFourSquare = new ListaFourSquare(SelectPictures.Latitud,SelectPictures.Longitud);
-                
-           // });
+           
         
         }
        
@@ -85,5 +80,3 @@ namespace PML2Exa2Grupo3.viewmodel
     }
 
     }
-
-
