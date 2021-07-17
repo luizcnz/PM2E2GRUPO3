@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X7X7kdxk9f0MqGSsocwqeBkLRWkCasIKUSqSSyGEfcHFgrw6pR7jITDxu0j8BAf3OxnwXT3YwtMKRoCJB2E/NA==",
+  "dgSpecHash": "NUk+8Xypg0gIuRYF0u3qhk50hd/1QJjZOVjW7wUWD2V+ftyuYqz/RWO12hhIo9F2hKrrFOZQXPc7EgSSK8MSOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
   "expectedPackageFiles": [
@@ -57,10 +57,37 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.versionedparcelable\\1.1.1.6\\xamarin.androidx.versionedparcelable.1.1.1.6.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.viewpager\\1.0.0.6\\xamarin.androidx.viewpager.1.0.0.6.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.viewpager2\\1.0.0.8\\xamarin.androidx.viewpager2.1.0.0.8.nupkg.sha512",
+    "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2083\\xamarin.forms.maps.5.0.0.2083.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.android.material\\1.2.1.1\\xamarin.google.android.material.1.2.1.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xamarin.googleplayservices.base\\117.1.0\\xamarin.googleplayservices.base.117.1.0.nupkg.sha512",
+    "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xamarin.googleplayservices.basement\\117.1.0\\xamarin.googleplayservices.basement.117.1.0.nupkg.sha512",
+    "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xamarin.googleplayservices.maps\\117.0.0\\xamarin.googleplayservices.maps.117.0.0.nupkg.sha512",
+    "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xamarin.googleplayservices.tasks\\117.0.0\\xamarin.googleplayservices.tasks.117.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Degradación del paquete detectada: Xamarin.Essentials de 1.7.0 a 1.6.1. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n PML2Exa2Grupo3.Android -> PML2Exa2Grupo3 -> Xamarin.Essentials (>= 1.7.0) \r\n PML2Exa2Grupo3.Android -> Xamarin.Essentials (>= 1.6.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Degradación del paquete detectada: Xamarin.Forms de 5.0.0.2083 a 5.0.0.2012. Haga referencia al paquete directamente desde el proyecto para seleccionar una versión diferente. \r\n PML2Exa2Grupo3.Android -> PML2Exa2Grupo3 -> Xamarin.Forms (>= 5.0.0.2083) \r\n PML2Exa2Grupo3.Android -> Xamarin.Forms (>= 5.0.0.2012)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "MonoAndroid,Version=v11.0"
+      ]
+    }
+  ]
 }
