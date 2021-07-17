@@ -13,13 +13,19 @@ namespace PML2Exa2Grupo3
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListaFourSquare : ContentPage
     {
-        public ListaFourSquare()
+        public double Longitud{get;set;}
+        public double Latitdud { get; set; }
+        public ListaFourSquare(double latitud, double longitud)
         {
             InitializeComponent();
+            Longitud = longitud;
+            Latitdud = latitud;
         }
+        
+       
         private async void btnConsume_Clicked(object sender, EventArgs e)
         {
-            ListFourSquare.ItemsSource = await Metodos.getSites(14.09738, -87.2053992);
+            ListFourSquare.ItemsSource = await Metodos.getSites(Latitdud, Longitud);
         }
     }
 }

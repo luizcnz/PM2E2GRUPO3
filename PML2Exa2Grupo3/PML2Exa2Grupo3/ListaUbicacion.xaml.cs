@@ -20,30 +20,17 @@ namespace PML2Exa2Grupo3
     
     public partial class ListaUbicacion : ContentPage
     {
-        public ObservableCollection<Sitios> lista { get; set; }
 
-        public List<Sitios> Sitios { get; set; }
-        public ICommand DeleteCommand { protected set; get; }
-        public ICommand SeeCommand { protected set; get; }
         public ListaUbicacion()
-        {        
-            
-           InitializeComponent();
-            DeleteCommand = new Command<Sitios>(async (key) =>
-            {
-                Sitios SelectPictures = key as Sitios;
-                await DisplayAlert("info", SelectPictures.Id.ToString(), "OK");
-            });
+        {
 
-            SeeCommand = new Command<Sitios>(async (key) =>
-            {
-                Sitios SelectPictures = key as Sitios;
+            InitializeComponent();
+        
 
-                await DisplayAlert("info", SelectPictures.Id.ToString(), "OK");
-            });
-
-           
+       
         }
+
+        
 
         protected async override void OnAppearing()
         {

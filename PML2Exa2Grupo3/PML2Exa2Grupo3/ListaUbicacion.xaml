@@ -14,8 +14,10 @@
     <ContentPage.Content>
         <StackLayout>
             <!--- -->
+            
             <ListView x:Name="ListMisUbicaciones"
-                      ItemsSource="{Binding SitiosList}">
+                      ItemsSource="{Binding SitiosList}"
+                      RowHeight="150">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >
@@ -23,43 +25,30 @@
                                 <SwipeView>
                                     <SwipeView.LeftItems>
                                         <SwipeItems>
-                                            <SwipeItem Text="Actualizar"
-                                               IconImageSource="EditLocations.png"
-                                               BackgroundColor="#5E95D5"
-                                                 Command="{Binding BindingContext.UpdateCommand, Source={x:Reference Name=ListaUbicacion}}"
-                                                 CommandParameter="{Binding .}"
-                                               />
-                                            <SwipeItem Text="Ver"
+                                     
+                                            <SwipeItem Text="Ver Ubicaciones cercanas"
                                                IconImageSource="locationsPing.png"
                                                BackgroundColor="#5E95D5"
-                                                 Command="{Binding BindingContext.SeeCommand, Source={x:Reference Name=ListaUbicacion}}"
+                                                 Command="{Binding BindingContext.SeeCommand, Source={x:Reference Name=ListMisUbicaciones}}"
                                                  CommandParameter="{Binding .}"
                                                />
                                             <SwipeItem Text="Borrar"
                                                IconImageSource="Delete.png"
                                                BackgroundColor="#DF5B77"
-                                               Command="{Binding BindingContext.DeleteCommand, Source={x:Reference Name=ListaUbicacion}}"
+                                               Command="{Binding BindingContext.DeleteCommand, Source={x:Reference Name=ListMisUbicaciones}}"
                                                  CommandParameter="{Binding .}"  
                                                 />
+
                                         </SwipeItems>
                                     </SwipeView.LeftItems>
 
                                     <StackLayout Orientation="Vertical">
-                                        <Label TextColor="Black" Text="{Binding  Id}" IsVisible="true"/>
                                         <Label TextColor="Black" Text="{Binding Descripcion}" IsVisible="true"/>
                                         <Label TextColor="Black" Text="{Binding Latitud}" IsVisible="true"/>
                                         <Label TextColor="Black" Text="{Binding Longitud}" IsVisible="true"/>
 
                                     </StackLayout>
                                 </SwipeView>
-
-                                <Button Grid.Column="1"
-                                   Grid.Row="1"
-                                        x:Name="btnViewMap"
-                                            Text="Ver Mapa" 
-                                            Margin="20,10" 
-                                            CornerRadius="30"
-                                            BackgroundColor="#55C5DA" />
 
                             </Grid>
 
@@ -68,6 +57,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Label TextColor="DarkOrange" Text="Para ver los botones seleccione un item y desileza a la izquierda" FontSize="25"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
