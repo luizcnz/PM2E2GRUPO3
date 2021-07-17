@@ -6,7 +6,7 @@ namespace PML2Exa2Grupo3.Config
 {
     class URL
     {
-        private static string urlGeneral = "http://173.249.21.6/exam";
+        private static string urlGeneral = "https://apimovil2.herokuapp.com/exam";
 
         public static String getUrl(string endpoint)
         {
