@@ -17,12 +17,12 @@ namespace PML2Exa2Grupo3 {
     public partial class ListaUbicacion : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ListView ListUbications;
+        private global::Xamarin.Forms.ListView ListMisUbicaciones;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ListaUbicacion));
-            ListUbications = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "ListUbications");
+            ListMisUbicaciones = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "ListMisUbicaciones");
         }
     }
 }
