@@ -126,11 +126,14 @@ namespace PML2Exa2Grupo3.Config
             public Response response { get; set; }
         }
 
-        public async static Task<List<Venue>> getSites(Double platitud, Double plongitud)
+        public async static Task<List<Venue>> getSites(Double platitud, Double plongitud, Double pdistance)
         {
-
+            //lista principal que obtiene toda la api
+            List<Venue> sitios = new List<Venue>();
+            //se crea otra lista donde solo colocaremos los que pasaremos con un distancia fija
             List<Venue> sitioscercanos = new List<Venue>();
 
+            //extraemos la api
             using (HttpClient cliente = new HttpClient())
             {
                 var Respuesta = await cliente.GetAsync(Ubicaciones.getUrl(platitud, plongitud));
@@ -140,12 +143,26 @@ namespace PML2Exa2Grupo3.Config
                     var json = Respuesta.Content.ReadAsStringAsync().Result;
                     var lugares = JsonConvert.DeserializeObject<Places>(json);
 
-                    sitioscercanos = lugares.response.venues as List<Venue>;
+                    sitios = lugares.response.venues as List<Venue>;
                 }
             }
 
+           // recoremos los sitios y creamos una lista que hara la lectura por cada uno de la lista anterior 
+            foreach (var sitio in sitios)
+            {
+                //a esa lista le mandamos  la locacion que valida y le decimos que si es menor al parametro que le enviamos
+                if (sitio.location.distance<= pdistance)
+                {
+                    //agregamos a la lista que creamos cada uno de los sitios
+                    sitioscercanos.Add(sitio);
+                }
+            }
             return sitioscercanos;
+
+
         }
+
+
     }
 
 

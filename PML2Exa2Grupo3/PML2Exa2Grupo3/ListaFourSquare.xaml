@@ -5,25 +5,61 @@
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="ListFourSquare"
-                      RowHeight="120">
+                      ItemSelected="ListFourSquare_ItemSelected"
+                      RowHeight="100">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >
                             <Grid >
-                                <StackLayout Orientation="Vertical">
-                                    <Label Text="{Binding name}" 
-                                   FontAttributes="Bold"/>
+                                
+                                
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                
+                                    <Label 
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        x:Name="txtName"
+                                        Text="{Binding name}" 
+                                        FontAttributes="Bold"
+                                        FontSize="18"/>
 
-                                    <Label Text="{Binding location.country}" 
-                                   FontAttributes="Bold"/>
+                                    <Label 
+                                        Grid.Row="1"
+                                        Grid.Column="0"
+                                        Text="{Binding location.city}" 
+                                        FontAttributes="Bold"/>
 
-                                    <Label Text="{Binding location.distance}" />
-                                </StackLayout>
+                                    <Label 
+                                        Grid.Row="1"
+                                        Grid.Column="1"
+                                        Text="{Binding location.distance}" />
+
+                                    <Label 
+                                        x:Name="txtLatitude"
+                                        Text="{Binding location.lat}" IsVisible="false"/>
+                                    <Label 
+                                        x:Name="txtLongitud"
+                                        Text="{Binding location.lng}" IsVisible="false"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button 
+                x:Name="btnHowToGet"
+                Text="Como llegar"
+                ImageSource="HowtoGet.png"
+                BackgroundColor="#5E95D5"
+                Clicked="btnHowToGet_Clicked"
+                />
+
             <Button Text="Consumir FourSquare" 
                     x:Name="btnConsume" 
                     Clicked="btnConsume_Clicked"/>

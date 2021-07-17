@@ -91,6 +91,15 @@
                     BackgroundColor="#F748EF"
                     Text="Ingresar Datos de Prueba"/>
 
+            <Button 
+                    x:Name="btnRestApi"
+                    Text="Foursquare" 
+                    Margin="20,10" 
+                    CornerRadius="30"
+                    BackgroundColor="#55C5DA" 
+                    Clicked="btnRestApi_Clicked"
+                                />
+
         </StackLayout>
     </ScrollView>
 

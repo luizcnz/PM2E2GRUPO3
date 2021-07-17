@@ -135,5 +135,12 @@ namespace PML2Exa2Grupo3
                 this.foto.Source = ImageSource.FromStream(() => { return fotoTomada.GetStream(); });
             }
         }
-       }
+
+
+        private async void btnRestApi_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListaFourSquare());
+        }
+
     }
+}

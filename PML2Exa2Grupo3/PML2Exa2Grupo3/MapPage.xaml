@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:maps="clr-namespace:Xamarin.Essentials;assembly=Xamarin.Essentials"
+             x:Class="PML2Exa2Grupo3.MapPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <StackLayout IsVisible="false">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="{Binding name}" 
+                                   FontAttributes="Bold"/>
+
+                    <Label Text="{Binding location.lat}" 
+                           x:Name="Mapa_Lat"/>
+
+                    <Label Text="{Binding location.lng}" 
+                           x:Name="Mapa_Lng"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -42,12 +42,14 @@ namespace PML2Exa2Grupo3
         
         InitializeComponent();
         }
-        protected async override void OnAppearing()
+
+        protected override void OnAppearing()
         {
 
             base.OnAppearing();
           
         }
+
     }
 
 }
