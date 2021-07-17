@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using PML2Exa2Grupo3.viewmodel;
 using Xamarin.Forms;
+using Plugin.Connectivity;
 
 namespace PML2Exa2Grupo3
 {
@@ -32,6 +33,13 @@ namespace PML2Exa2Grupo3
             {
                 DisplayAlert("Permisos Geolocalizacion", "Por favor, de Acceso a su ubicacion/geolocalizacion de manera manual en dispositivo", "OK");
             }
+
+            var conn = CrossConnectivity.Current;
+            if (!conn.IsConnected)//Servicio de Geolocalizacion existente
+            {
+                DisplayAlert("Internet", "Por Favor, Active la Conexion a internet para usar esta aplicacion", "OK");
+            }
+           
         }
 
         private async void Localizacion()

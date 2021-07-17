@@ -1,4 +1,5 @@
 FormsViewGroup.dll
+Plugin.Connectivity.dll
 Plugin.CurrentActivity.dll
 Plugin.Geolocator.dll
 Plugin.Media.dll

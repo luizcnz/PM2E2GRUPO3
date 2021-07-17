@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4NHqOR2yPTpzcwzG31MNKXR/ZkX/tvvnVXZVj8nWLkQos2rsIJhEOmFZ0CThBtWe24HU22rnW1WrmbBFsMpe+g==",
+  "dgSpecHash": "R8nsLLnRNzX+/Zpm05fVjfpu/S6+l/5K4iyWtR2Q4+XwXlxUVZYCRvNGsBmEd/WilveiblSvNdJQSysY/Sq0oA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",

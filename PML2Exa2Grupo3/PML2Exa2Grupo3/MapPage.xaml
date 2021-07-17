@@ -11,6 +11,16 @@
                       x:Name="mpMapa" 
                       IsShowingUser="True"/>
 
+            <StackLayout>
+                <Button 
+                    x:Name="btnDriving"
+                    Text="Driving" 
+                    Margin="20,10" 
+                    CornerRadius="30"
+                    BackgroundColor="#55C5DA" 
+                    Clicked="btnDriving_Clicked"
+                                />
+            </StackLayout>
             <StackLayout IsVisible="false">
                 <StackLayout Orientation="Vertical">
                     <Label x:Name="txtMapaNombre"

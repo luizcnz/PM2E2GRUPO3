@@ -55,14 +55,11 @@
             <Button 
                 x:Name="btnHowToGet"
                 Text="Como llegar"
+                Margin="50,0"
                 ImageSource="HowtoGet.png"
                 BackgroundColor="#5E95D5"
                 Clicked="btnHowToGet_Clicked"
                 />
-
-            <Button Text="Consumir FourSquare" 
-                    x:Name="btnConsume" 
-                    Clicked="btnConsume_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

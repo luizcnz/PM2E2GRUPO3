@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NUk+8Xypg0gIuRYF0u3qhk50hd/1QJjZOVjW7wUWD2V+ftyuYqz/RWO12hhIo9F2hKrrFOZQXPc7EgSSK8MSOw==",
+  "dgSpecHash": "ykmU/pOj2HafdpIYATwlqhw1iYZMtqIQ0N2zNMBCcSCIGBcHvgbSwYMhPqY28A5GYaXy0e14sfNRQGh2ZKx8fw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sarah Osorto\\source\\repos\\PM2Examen2GRUPO3\\PML2Exa2Grupo3\\PML2Exa2Grupo3.Android\\PML2Exa2Grupo3.Android.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\plugin.currentactivity\\2.1.0.2\\plugin.currentactivity.2.1.0.2.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\plugin.permissions\\3.0.0.12\\plugin.permissions.3.0.0.12.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Sarah Osorto\\.nuget\\packages\\xamarin.android.support.annotations\\25.4.0.2\\xamarin.android.support.annotations.25.4.0.2.nupkg.sha512",

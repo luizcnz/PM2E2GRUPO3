@@ -48,6 +48,14 @@ namespace PML2Exa2Grupo3
             }
             mpMapa.MoveToRegion(MapSpan.FromCenterAndRadius(ubicacion.Position, Distance.FromKilometers(1)));
         }
+
+        private async void btnDriving_Clicked(object sender, EventArgs e)
+        {
+            var location = new Location(lactitud, Longitud);
+            var options = new MapLaunchOptions { NavigationMode = NavigationMode.Driving };
+
+            await Xamarin.Essentials.Map.OpenAsync(location, options);
+        }
     }
 
 }
