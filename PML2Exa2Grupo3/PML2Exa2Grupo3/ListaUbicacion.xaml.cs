@@ -27,11 +27,8 @@ namespace PML2Exa2Grupo3
 
         public ListaUbicacion()
         {
-
             InitializeComponent();
-        
-
-       
+            OnAppearing();
         }        
 
         protected async override void OnAppearing()
