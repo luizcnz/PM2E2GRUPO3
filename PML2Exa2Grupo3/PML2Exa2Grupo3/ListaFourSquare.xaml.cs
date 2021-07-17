@@ -30,9 +30,6 @@ namespace PML2Exa2Grupo3
 
         }
 
-        private async void btnConsume_Clicked(object sender, EventArgs e)
-        {
-        }
 
         protected async override void OnAppearing()
         {
@@ -50,7 +47,7 @@ namespace PML2Exa2Grupo3
           
         }
 
-        private async void ListFourSquare_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void ListFourSquare_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var seleccionarItem = e.SelectedItem as Metodos.Venue;
             ItemNombre = seleccionarItem.name;
