@@ -22,33 +22,14 @@
                     <DataTemplate>
                         <ViewCell >
                             <Grid>
-                                <SwipeView>
-                                    <SwipeView.LeftItems>
-                                        <SwipeItems>
-                                     
-                                            <!--<SwipeItem Text="Ver Ubicaciones cercanas"
-                                               IconImageSource="locationsPing.png"
-                                               BackgroundColor="#5E95D5"
-                                                 Command="{Binding BindingContext.SeeCommand, Source={x:Reference Name=ListMisUbicaciones}}"
-                                                 CommandParameter="{Binding .}"
-                                               />-->
-                                            <SwipeItem Text="Borrar"
-                                               IconImageSource="Delete.png"
-                                               BackgroundColor="#DF5B77"
-                                               Command="{Binding BindingContext.DeleteCommand, Source={x:Reference Name=ListMisUbicaciones}}"
-                                                 CommandParameter="{Binding .}"  
-                                                />
-
-                                        </SwipeItems>
-                                    </SwipeView.LeftItems>
-
+                                
                                     <StackLayout Orientation="Vertical">
-                                        <Label TextColor="Black" Text="{Binding Descripcion}" IsVisible="true"/>
-                                        <Label TextColor="Black" Text="{Binding Latitud}" IsVisible="true"/>
-                                        <Label TextColor="Black" Text="{Binding Longitud}" IsVisible="true"/>
+                                        <Label TextColor="Black" Text="{Binding Descripcion}" IsVisible="true" FontSize="18"/>
+                                        <Label TextColor="Black" Text="{Binding Latitud}" IsVisible="false"/>
+                                        <Label TextColor="Black" Text="{Binding Longitud}" IsVisible="false"/>
 
                                     </StackLayout>
-                                </SwipeView>
+                               
 
                             </Grid>
 
@@ -57,13 +38,19 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            
             <Button x:Name="btnSeeUbications"
                     Text="Ver Ubicaciones cercarnas" 
                     ImageSource="locationsPing.png"
                     BackgroundColor="#5E95D5"
                     Clicked="btnSeeUbications_Clicked"
                     />
-            <Label TextColor="DarkOrange" Text="Para ver los botones seleccione un item y desileza a la izquierda" FontSize="25"/>
-        </StackLayout>
+            <Button x:Name="btnDeleteUbications"
+                    Text="Ver Ubicaciones cercarnas" 
+                    ImageSource="Delete.png.png"
+                    BackgroundColor="#5E95D5"
+                    Clicked="btnDeleteUbications_Clicked_1"
+                    />
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>

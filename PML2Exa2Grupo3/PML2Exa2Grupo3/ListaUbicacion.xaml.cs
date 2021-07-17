@@ -21,7 +21,9 @@ namespace PML2Exa2Grupo3
 
     public partial class ListaUbicacion : ContentPage
     {
+        public ObservableCollection<Sitios> SitiosList { get; set; }
         private Sitios seleccinarId;
+        private object cliente;
 
         public ListaUbicacion()
         {
@@ -62,6 +64,29 @@ namespace PML2Exa2Grupo3
 
         }
 
+      
+        private async void btnDeleteUbications_Clicked_1(object sender, EventArgs e)
+        {
+            HttpClient cliente = new HttpClient();
+            if (seleccinarId != null)
+            {
+
+                Uri uri = new Uri(string.Format(URL.getUrl("/delete/" + seleccinarId.Id)));
+                HttpResponseMessage response = await cliente.DeleteAsync(uri);
+                var result = await cliente.DeleteAsync(uri);
+
+                if (result.IsSuccessStatusCode)
+                {
+
+                    //SitiosList.Remove(seleccinarId.Id);
+                    Debug.WriteLine("successfully deleted.");
+                }
+            }
+            else
+            {
+                await DisplayAlert("Alerta", "Para poder Eliminar Seleccione un campo", "Entendido!");
+            }
         }
+    }
 
     }
