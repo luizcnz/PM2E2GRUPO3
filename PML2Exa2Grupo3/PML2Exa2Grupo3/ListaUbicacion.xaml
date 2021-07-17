@@ -14,9 +14,7 @@
     <ContentPage.Content>
         <StackLayout>
             <!--- -->
-            <Label x:Name="txtLatitud"   Text="{Binding Latitud}" IsVisible="false"/>
-            <Label x:Name="txtLongitud"  Text="{Binding Longitud}" IsVisible="false"/>
-            
+                        
             <ListView x:Name="ListMisUbicaciones"
                       ItemsSource="{Binding SitiosList}"
                       ItemSelected="ListMisUbicaciones_ItemSelected"
@@ -27,7 +25,9 @@
                             <Grid>
                                 
                                     <StackLayout Orientation="Vertical">
-                                        <Label TextColor="Black" Text="{Binding Descripcion}" IsVisible="true" FontSize="18"/>
+                                        <Label TextColor="Black"
+                                               Margin="0,50"
+                                               Text="{Binding Descripcion}" IsVisible="true" FontSize="18"/>
                                         <Label TextColor="Black" Text="{Binding Latitud}" IsVisible="false"/>
                                         <Label TextColor="Black" Text="{Binding Longitud}" IsVisible="false"/>
 

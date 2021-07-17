@@ -38,7 +38,7 @@ namespace PML2Exa2Grupo3
         {
             Longitud = Convert.ToDouble(txtLongitud.Text);
             Latitud = Convert.ToDouble(txtLatitud.Text);
-            ListFourSquare.ItemsSource = await Metodos.getSites(Latitud, Longitud, 150);
+            ListFourSquare.ItemsSource = await Metodos.getSites(Latitud, Longitud, 100);
 
         }
 

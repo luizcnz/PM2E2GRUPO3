@@ -82,8 +82,15 @@ namespace PML2Exa2Grupo3
 
         private async void btnSavedUbication_Clicked(object sender, EventArgs e)
         {
-            //condicional para asegurarse de que se ingreso un nombre y una descripcion
-            if (!string.IsNullOrEmpty(txtDescripcion.Text))
+            if (String.IsNullOrEmpty(txtLongitud.Text) && String.IsNullOrEmpty(txtLatitud.Text))
+            {
+                await DisplayAlert("Sin Datos", "Para Obtener la Lactitud y Longitud presionar <<Nueva Ubicacion>> ", "Ok");
+            }
+            else if (String.IsNullOrEmpty(txtDescripcion.Text))
+            {
+                await DisplayAlert("Campo Vacio", "Por favor, Ingrese una Descripcion de la Ubicacion ", "Ok");
+            }
+            else if (!string.IsNullOrEmpty(txtDescripcion.Text))
             {
                 Sitios photoToSave = new Sitios
                 {
@@ -99,6 +106,8 @@ namespace PML2Exa2Grupo3
 
                     var client = new HttpClient();
                     var content = new StringContent(JsonConvert.SerializeObject(photoToSave), Encoding.UTF8, "application/json");
+                    await DisplayAlert("Espera", " Su informacion se esta guardando por favor espere", "Aceptar");
+
                     HttpResponseMessage response = await client.PostAsync(URL.getUrl("/sites"), content);
                     if (response.IsSuccessStatusCode)
                     {
@@ -145,10 +154,6 @@ namespace PML2Exa2Grupo3
         }
 
 
-        private async void btnRestApi_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ListaFourSquare());
-        }
-
+       
     }
 }
