@@ -1,4 +1,5 @@
-﻿using PML2Exa2Grupo3.Config;
+﻿using Plugin.Media.Abstractions;
+using PML2Exa2Grupo3.Config;
 
 using System;
 using System.Collections.Generic;
@@ -7,8 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 
 
 namespace PML2Exa2Grupo3
@@ -25,35 +28,26 @@ namespace PML2Exa2Grupo3
         {
             InitializeComponent();  
 
-
-
         }
-        private async void btnConsume_Clicked(object sender, EventArgs e)
+
+
+        protected async override void OnAppearing()
         {
-            ListFourSquare.ItemsSource = await Metodos.getSites(13.301279153699598, -87.1824633751975,150);
+            ListFourSquare.ItemsSource = await Metodos.getSites(13.301279153699598, -87.1824633751975, 150);
+
         }
 
         private async void btnHowToGet_Clicked(object sender, EventArgs e)
-            {
+         {
+            var newubication = new Xamarin.Essentials.Location(ItemLactitud, ItemLongitud);
+            var options = new MapLaunchOptions { NavigationMode = NavigationMode.Driving };
 
-                var Segunda = new MapPage();
-                Segunda.BindingContext = new
-                {
-                    nombre = ItemNombre,
-                    longitud = ItemLongitud,
-                    lactitud = ItemLactitud
-                };
-                await Navigation.PushAsync(Segunda);
-
-                //await DisplayAlert("Datos a Enviar> " + seleccionarItem.txtName +  " Coordenadas >> " + seleccionarItem.txtLatitude + " " + seleccionarItem.txtLongitud, "OK");
-                await DisplayAlert("Datos a Enviar> " + ItemNombre, " Coordenadas >> " + ItemLactitud + " " + ItemLongitud, "OK");
-
-
-           
-
+            await Xamarin.Essentials.Map.OpenAsync(newubication, options);
+            newubication = null;
+          
         }
 
-        private async void ListFourSquare_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void ListFourSquare_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var seleccionarItem = e.SelectedItem as Metodos.Venue;
             ItemNombre = seleccionarItem.name;

@@ -1,22 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:maps="clr-namespace:Xamarin.Essentials;assembly=Xamarin.Essentials"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"   
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="PML2Exa2Grupo3.MapPage">
     <ContentPage.Content>
         <StackLayout>
+            
+            <maps:Map HorizontalOptions="FillAndExpand"
+             VerticalOptions="FillAndExpand" 
+                      x:Name="mpMapa" 
+                      IsShowingUser="True"/>
 
-
-            <StackLayout IsVisible="true">
+            <StackLayout>
+                <Button 
+                    x:Name="btnDriving"
+                    Text="Driving" 
+                    Margin="20,10" 
+                    CornerRadius="30"
+                    BackgroundColor="#55C5DA" 
+                    Clicked="btnDriving_Clicked"
+                                />
+            </StackLayout>
+            <StackLayout IsVisible="false">
                 <StackLayout Orientation="Vertical">
-                    <Label Text="{Binding nombre}" 
+                    <Label x:Name="txtMapaNombre"
+                        Text="{Binding nombre}" 
                                    FontAttributes="Bold"/>
 
                     <Label Text="{Binding longitud}" 
-                           x:Name="Mapa_Lat"/>
+                           x:Name="txtMapaLongitud"/>
 
                     <Label Text="{Binding lactitud}" 
-                           x:Name="Mapa_Lng"/>
+                           x:Name="txtMapaLactitud"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
