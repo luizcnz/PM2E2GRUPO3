@@ -17,6 +17,7 @@
             
             <ListView x:Name="ListMisUbicaciones"
                       ItemsSource="{Binding SitiosList}"
+                      ItemSelected="ListMisUbicaciones_ItemSelected"
                       RowHeight="150">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -46,8 +47,8 @@
                     Clicked="btnSeeUbications_Clicked"
                     />
             <Button x:Name="btnDeleteUbications"
-                    Text="Ver Ubicaciones cercarnas" 
-                    ImageSource="Delete.png.png"
+                    Text="Borrar" 
+                    ImageSource="Delete.png"
                     BackgroundColor="#5E95D5"
                     Clicked="btnDeleteUbications_Clicked_1"
                     />

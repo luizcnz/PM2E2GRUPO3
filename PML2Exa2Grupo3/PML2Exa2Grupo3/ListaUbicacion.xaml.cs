@@ -57,12 +57,7 @@ namespace PML2Exa2Grupo3
 
         }
 
-        private void ListaUbicacion_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-
-            seleccinarId = e.SelectedItem as Sitios;
-
-        }
+        
 
       
         private async void btnDeleteUbications_Clicked_1(object sender, EventArgs e)
@@ -86,6 +81,11 @@ namespace PML2Exa2Grupo3
             {
                 await DisplayAlert("Alerta", "Para poder Eliminar Seleccione un campo", "Entendido!");
             }
+        }
+
+        private void ListMisUbicaciones_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            seleccinarId = e.SelectedItem as Sitios;
         }
     }
 
