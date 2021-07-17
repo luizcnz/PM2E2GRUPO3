@@ -74,7 +74,9 @@ namespace PML2Exa2Grupo3
 
         private async void btnListUbication_Clicked(object sender, EventArgs e)
         {
-            
+            CargarSitios cargar = new CargarSitios();
+
+          
             await Navigation.PushAsync(new ListaUbicacion());
         }
 
@@ -91,13 +93,13 @@ namespace PML2Exa2Grupo3
                     Latitud = Convert.ToDouble(txtLatitud.Text),
                     Fotografia = arrayImagen
                 };
-
+              
                 try
                 {
 
                     var client = new HttpClient();
                     var content = new StringContent(JsonConvert.SerializeObject(photoToSave), Encoding.UTF8, "application/json");
-                    HttpResponseMessage response = await client.PostAsync("https://apimovil2.herokuapp.com/exam/add", content);
+                    HttpResponseMessage response = await client.PostAsync(URL.getUrl("/sites"), content);
                     if (response.IsSuccessStatusCode)
                     {
                         //var valor = await response.Content.ReadAsStringAsync();
@@ -106,8 +108,6 @@ namespace PML2Exa2Grupo3
                         txtDescripcion.Text = "";
                         txtLatitud.Text = "";
                         txtLongitud.Text = "";
-
-
                     }
                 }
                 catch (Exception ex)

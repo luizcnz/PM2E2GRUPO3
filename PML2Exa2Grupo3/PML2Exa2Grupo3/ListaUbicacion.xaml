@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PML2Exa2Grupo3.ListaUbicacion">
+             x:Class="PML2Exa2Grupo3.ListaUbicacion"
+             xmlns:local="clr-namespace:PML2Exa2Grupo3.viewmodel" 
+             xmlns:Converters="clr-namespace:PML2Exa2Grupo3.Converters">
+    <ContentPage.BindingContext>
+        <local:ListSitiosVM/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <Converters:ConvertStringToImage x:Key="ConvertStringToImage"/>
+    </ContentPage.Resources>
+   
     <ContentPage.Content>
         <StackLayout>
             <!--- -->
-            <ListView x:Name="ListUbications"
-                      RowHeight="125">
+            
+            <ListView x:Name="ListMisUbicaciones"
+                      ItemsSource="{Binding SitiosList}"
+                      RowHeight="150">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >
@@ -14,53 +25,30 @@
                                 <SwipeView>
                                     <SwipeView.LeftItems>
                                         <SwipeItems>
-                                            <SwipeItem Text="Actualizar"
-                                               IconImageSource="EditLocations.png"
-                                               BackgroundColor="#5E95D5"
-                                                 Command="{Binding BindingContext.UpdateCommand, Source={x:Reference Name=ListaUbicacion}}"
-                                                 CommandParameter="{Binding .}"
-                                               />
-                                            <SwipeItem Text="Ver"
+                                     
+                                            <SwipeItem Text="Ver Ubicaciones cercanas"
                                                IconImageSource="locationsPing.png"
                                                BackgroundColor="#5E95D5"
-                                                 Command="{Binding BindingContext.SeeCommand, Source={x:Reference Name=ListaUbicacion}}"
+                                                 Command="{Binding BindingContext.SeeCommand, Source={x:Reference Name=ListMisUbicaciones}}"
                                                  CommandParameter="{Binding .}"
                                                />
                                             <SwipeItem Text="Borrar"
                                                IconImageSource="Delete.png"
                                                BackgroundColor="#DF5B77"
-                                               Command="{Binding BindingContext.DeleteCommand, Source={x:Reference Name=ListaUbicacion}}"
+                                               Command="{Binding BindingContext.DeleteCommand, Source={x:Reference Name=ListMisUbicaciones}}"
                                                  CommandParameter="{Binding .}"  
                                                 />
+
                                         </SwipeItems>
                                     </SwipeView.LeftItems>
 
                                     <StackLayout Orientation="Vertical">
-                                        <!--<Frame BackgroundColor="#3E3161" CornerRadius="10" VerticalOptions="Fill">
-                                            -->
-                                        <!--<Label TextColor="Aqua" Text="{Binding Fotografia}" IsVisible="true" FontSize="20" VerticalOptions="Center" Padding="0" />-->
-                                        <!--<Image x:Name="foto" 
-                                                   Source="iconofoto.png" 
-                                                   WidthRequest="20" />-->
-                                        <!--
-                                        </Frame>-->
-
-                                        <Label TextColor="Black" Text="{Binding id}" IsVisible="true"/>
                                         <Label TextColor="Black" Text="{Binding Descripcion}" IsVisible="true"/>
                                         <Label TextColor="Black" Text="{Binding Latitud}" IsVisible="true"/>
                                         <Label TextColor="Black" Text="{Binding Longitud}" IsVisible="true"/>
 
-
                                     </StackLayout>
                                 </SwipeView>
-
-                                <Button Grid.Column="1"
-                                   Grid.Row="1"
-                                        x:Name="btnViewMap"
-                                            Text="Ver Mapa" 
-                                            Margin="20,10" 
-                                            CornerRadius="30"
-                                            BackgroundColor="#55C5DA" />
 
                             </Grid>
 
@@ -69,6 +57,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Label TextColor="DarkOrange" Text="Para ver los botones seleccione un item y desileza a la izquierda" FontSize="25"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

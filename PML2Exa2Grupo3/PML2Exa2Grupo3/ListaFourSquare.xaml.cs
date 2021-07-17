@@ -19,6 +19,7 @@ namespace PML2Exa2Grupo3
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListaFourSquare : ContentPage
     {
+<<<<<<< HEAD
         private Metodos seleccionarItem;
         private String ItemNombre;
         private double ItemLactitud;
@@ -54,6 +55,21 @@ namespace PML2Exa2Grupo3
             ItemLactitud = seleccionarItem.location.lat;
             ItemLongitud = seleccionarItem.location.lng;
 
+=======
+        public double Longitud{get;set;}
+        public double Latitdud { get; set; }
+        public ListaFourSquare(double latitud, double longitud)
+        {
+            InitializeComponent();
+            Longitud = longitud;
+            Latitdud = latitud;
+        }
+        
+       
+        private async void btnConsume_Clicked(object sender, EventArgs e)
+        {
+            ListFourSquare.ItemsSource = await Metodos.getSites(Latitdud, Longitud);
+>>>>>>> 50b29916deff5585fb26d8b5fd5dc17d466e4d70
         }
     }
 }

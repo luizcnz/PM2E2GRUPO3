@@ -23,7 +23,11 @@ namespace PML2Exa2Grupo3.Models
         public double Longitud { get; set; }
 
         [JsonProperty("foto")]
-        public byte[] Fotografia { get; set; }
+        public byte [] Fotografia { get; set; }
+       
+        [JsonProperty("urlfoto")]
+        public string UrlFoto { get; set; }
+
 
 
         public async static Task<List<Sitios>> getValues()
