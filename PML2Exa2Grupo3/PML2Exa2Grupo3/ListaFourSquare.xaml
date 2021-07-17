@@ -4,6 +4,9 @@
              x:Class="PML2Exa2Grupo3.ListaFourSquare">
     <ContentPage.Content>
         <StackLayout>
+            <Label x:Name="txtLatitud"   Text="{Binding Latitud}" IsVisible="false"/>
+            <Label x:Name="txtLongitud"  Text="{Binding Longitud}" IsVisible="false"/>
+            
             <ListView x:Name="ListFourSquare"
                       ItemSelected="ListFourSquare_ItemSelected"
                       RowHeight="100">

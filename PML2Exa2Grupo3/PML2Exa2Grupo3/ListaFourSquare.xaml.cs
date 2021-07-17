@@ -25,18 +25,20 @@ namespace PML2Exa2Grupo3
         private double ItemLactitud;
         private double ItemLongitud;
         public double Longitud { get; set; }
-        public double Latitdud { get; set; }
+        public double Latitud { get; set; }
 
         public ListaFourSquare()
         {
             InitializeComponent();
-
+            
         }
 
 
         protected async override void OnAppearing()
         {
-            ListFourSquare.ItemsSource = await Metodos.getSites(Latitdud, Longitud, 150);
+            Longitud = Convert.ToDouble(txtLongitud.Text);
+            Latitud = Convert.ToDouble(txtLatitud.Text);
+            ListFourSquare.ItemsSource = await Metodos.getSites(Latitud, Longitud, 150);
 
         }
 

@@ -14,11 +14,13 @@
     <ContentPage.Content>
         <StackLayout>
             <!--- -->
+            <Label x:Name="txtLatitud"   Text="{Binding Latitud}" IsVisible="false"/>
+            <Label x:Name="txtLongitud"  Text="{Binding Longitud}" IsVisible="false"/>
             
             <ListView x:Name="ListMisUbicaciones"
                       ItemsSource="{Binding SitiosList}"
                       ItemSelected="ListMisUbicaciones_ItemSelected"
-                      RowHeight="150">
+                      RowHeight="100">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >

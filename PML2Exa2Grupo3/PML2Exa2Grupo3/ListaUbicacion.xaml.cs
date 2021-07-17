@@ -70,7 +70,7 @@ namespace PML2Exa2Grupo3
                 if (result.IsSuccessStatusCode)
                 {
 
-                    //SitiosList.Remove(seleccinarId.Id);
+                    await DisplayAlert("Notificaicon", "Se Elimino exitosamente el Dato", "Ok");
                     Debug.WriteLine("successfully deleted.");
                 }
             }
