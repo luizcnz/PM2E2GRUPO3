@@ -10,29 +10,46 @@
     <ContentPage.Resources>
         <Converters:ConvertStringToImage x:Key="ConvertStringToImage"/>
     </ContentPage.Resources>
-   
+
     <ContentPage.Content>
         <StackLayout>
             <!--- -->
-                        
+
             <ListView x:Name="ListMisUbicaciones"
                       ItemsSource="{Binding SitiosList}"
                       ItemSelected="ListMisUbicaciones_ItemSelected"
-                      RowHeight="100">
+                      RowHeight="110">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >
                             <Grid>
-                                
-                                    <StackLayout Orientation="Vertical">
-                                        <Label TextColor="Black"
-                                               Margin="0,50"
-                                               Text="{Binding Descripcion}" IsVisible="true" FontSize="18"/>
-                                        <Label TextColor="Black" Text="{Binding Latitud}" IsVisible="false"/>
-                                        <Label TextColor="Black" Text="{Binding Longitud}" IsVisible="false"/>
 
-                                    </StackLayout>
-                               
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame Margin="10"
+                                           BorderColor="Black"
+                                           CornerRadius="60"
+                                           HeightRequest="50"
+                                           WidthRequest="50"
+                                           IsClippedToBounds="True"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center">
+
+                                        <Image Source="{Binding UrlFoto}"
+                                             Aspect="AspectFill"
+                                             Margin="-20"
+                                             HeightRequest="100"
+                                             WidthRequest="100" />
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical">
+                                    <Label TextColor="Black"
+                                               Margin="110,20"
+                                               Text="{Binding Descripcion}" IsVisible="true" FontSize="18"/>
+                                    <Label TextColor="Black" Text="{Binding Latitud}" IsVisible="false"/>
+                                    <Label TextColor="Black" Text="{Binding Longitud}" IsVisible="false"/>
+
+                                </StackLayout>
+
 
                             </Grid>
 
@@ -41,7 +58,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            
+
             <Button x:Name="btnSeeUbications"
                     Text="Ver Ubicaciones cercarnas" 
                     ImageSource="locationsPing.png"
@@ -54,6 +71,6 @@
                     BackgroundColor="#5E95D5"
                     Clicked="btnDeleteUbications_Clicked_1"
                     />
-            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
